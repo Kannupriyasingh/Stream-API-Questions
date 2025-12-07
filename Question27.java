@@ -12,7 +12,7 @@ public class Question27 {
 
         int ans = list.stream()
                         .sorted()
-                        .skip(k-1)
+                        .skip(k-1) // Returns a stream consisting of the remaining elements of this stream after discarding the first n elements of the stream. 
                         .findFirst()
                         .get();
 
